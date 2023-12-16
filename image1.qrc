@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/anniu.png</file>
+    </qresource>
+</RCC>

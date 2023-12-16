@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookM</class>
+ <widget class="QWidget" name="BookM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1520</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>1501</width>
+     <height>961</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>书名</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignJustify|AlignVCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>作者</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>出版社</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ISBN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>类别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>馆藏地点</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>当前馆藏数量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>总馆藏数量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>被借阅次数</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="button_delete">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>21</y>
+     <width>200</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>删除所选</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_add">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>20</y>
+     <width>200</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>添加图书</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_mod">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>20</y>
+     <width>200</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>修改所选</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_search">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>20</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="searchbox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;楷体&quot;;
+border:1px groove gray;
+border-radius:10px;
+padding:2px 4px;
+color: rgb(255, 255, 255);
+background-color: rgb(100, 115, 148);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>按ISBN</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按书名</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按作者</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按类别</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按出版社</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>按馆藏地点</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="button_all">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>21</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>显示全部</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchle">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>30</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;楷体&quot;;
+border-radius:10px;
+color: rgb(255, 255, 255);
+padding:2px 4px;
+background-color: rgb(100, 115, 148)</string>
+   </property>
+   <property name="maxLength">
+    <number>16</number>
+   </property>
+   <property name="placeholderText">
+    <string>输入内容</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

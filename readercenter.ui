@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReaderCenter</class>
+ <widget class="QWidget" name="ReaderCenter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1937</width>
+    <height>1094</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ReaderCenter{
+	border-image: url(:/image/image/moon.png);}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>100</y>
+     <width>401</width>
+     <height>971</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>421</width>
+      <height>821</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btn_personal">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(100, 115, 148);
+border-radius:15px;
+}
+QPushButton:pressed{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+	background-color: rgb(134, 155, 199);
+border-radius:15px;
+}
+QPushButton:hover{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(134, 155, 199);
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>个人中心</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_bbook">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(100, 115, 148);
+border-radius:15px;
+}
+QPushButton:pressed{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+	background-color: rgb(134, 155, 199);
+border-radius:15px;
+}
+QPushButton:hover{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(134, 155, 199);
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>图书借阅</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_rbook">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(100, 115, 148);
+border-radius:15px;
+}
+QPushButton:pressed{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+	background-color: rgb(134, 155, 199);
+border-radius:15px;
+}
+QPushButton:hover{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(134, 155, 199);
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>图书归还</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_his">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(100, 115, 148);
+border-radius:15px;
+}
+QPushButton:pressed{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+	background-color: rgb(134, 155, 199);
+border-radius:15px;
+}
+QPushButton:hover{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(134, 155, 199);
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>历史借阅</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_logout">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(100, 115, 148);
+border-radius:15px;
+}
+QPushButton:pressed{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+	background-color: rgb(134, 155, 199);
+border-radius:15px;
+}
+QPushButton:hover{
+font: 28pt &quot;楷体&quot;;
+color:white;
+background:transparent;
+cursor:pointer;
+background-color: rgb(134, 155, 199);
+border-radius:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>退出登录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame_2{
+	
+	border-image: url(:/image/image/moon.png);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>1520</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <zorder>frame_2</zorder>
+  <zorder>frame</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

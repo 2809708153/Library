@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BorrowHistory</class>
+ <widget class="QWidget" name="BorrowHistory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1520</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="button_ok">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>20</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>显示已归还记录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_searchid">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>30</y>
+     <width>120</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_todo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>显示待许可申请</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>1501</width>
+     <height>961</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>借书单号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>读者证号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>图书ISBN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>借出许可状态</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>借出审核管理员工号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>借出时间</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>归还期限</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>归还状态</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="button_all">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>30</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>显示全部</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchle">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>30</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;楷体&quot;;
+border-radius:10px;
+color: rgb(255, 255, 255);
+padding:2px 4px;
+background-color: rgb(110,115,148);</string>
+   </property>
+   <property name="text">
+    <string>请输入借书单号</string>
+   </property>
+   <property name="maxLength">
+    <number>16</number>
+   </property>
+   <property name="placeholderText">
+    <string>输入借书单号</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_no">
+   <property name="geometry">
+    <rect>
+     <x>559</x>
+     <y>20</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu.png);
+	color: rgb(255, 255, 255);
+    padding-top:-8px;
+}
+ 
+QPushButton:hover{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+QPushButton:pressed{
+font: 16pt &quot;楷体&quot;;
+border-image: url(:/image/image/anniu2.png);
+color: rgb(255, 255, 255);
+padding-top:-8px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>显示未归还记录</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
